@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>USC</string>
+		<key>website</key>
+		<string>www.usc.edu</string>
+		<key>image</key>
+		<string>usc.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Disneyland</string>
+		<key>website</key>
+		<string>www.disneyland.disney.go.com</string>
+		<key>image</key>
+		<string>disneyland.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>UCLA</string>
+		<key>website</key>
+		<string>www.ucla.edu</string>
+		<key>image</key>
+		<string>ucla.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dodger Stadium</string>
+		<key>website</key>
+		<string>www.losangeles.dodgers.mlb.com/la/ballpark</string>
+		<key>image</key>
+		<string>dodger_stadium.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LA Live</string>
+		<key>website</key>
+		<string>www.lalive.com</string>
+		<key>image</key>
+		<string>la_live.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Universal Studios</string>
+		<key>website</key>
+		<string>www.universalstudioshollywood.com</string>
+		<key>image</key>
+		<string>universal_studios.jpg</string>
+	</dict>
+</array>
+</plist>
