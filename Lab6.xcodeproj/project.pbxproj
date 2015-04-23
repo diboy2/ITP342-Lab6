@@ -17,6 +17,14 @@
 		56070D931AE82ECC00AD31AF /* PlacesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56070D921AE82ECC00AD31AF /* PlacesModel.m */; };
 		56070D9C1AE8323F00AD31AF /* PlacesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56070D9B1AE8323F00AD31AF /* PlacesCollectionViewController.m */; };
 		56070D9F1AE8379B00AD31AF /* PlacesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56070D9E1AE8379B00AD31AF /* PlacesCollectionViewCell.m */; };
+		5615E75D1AE89C1100621237 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5615E75C1AE89C1100621237 /* DetailViewController.m */; };
+		5615E7731AE8A88B00621237 /* disneyland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E76C1AE8A88B00621237 /* disneyland.jpg */; };
+		5615E7741AE8A88B00621237 /* dodger_stadium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E76D1AE8A88B00621237 /* dodger_stadium.jpg */; };
+		5615E7751AE8A88B00621237 /* getty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E76E1AE8A88B00621237 /* getty.jpg */; };
+		5615E7761AE8A88B00621237 /* la_live.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E76F1AE8A88B00621237 /* la_live.jpg */; };
+		5615E7771AE8A88B00621237 /* ucla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E7701AE8A88B00621237 /* ucla.jpg */; };
+		5615E7781AE8A88B00621237 /* universal_studios.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E7711AE8A88B00621237 /* universal_studios.jpg */; };
+		5615E7791AE8A88B00621237 /* usc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5615E7721AE8A88B00621237 /* usc.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,15 @@
 		56070D9B1AE8323F00AD31AF /* PlacesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesCollectionViewController.m; sourceTree = "<group>"; };
 		56070D9D1AE8379B00AD31AF /* PlacesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesCollectionViewCell.h; sourceTree = "<group>"; };
 		56070D9E1AE8379B00AD31AF /* PlacesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesCollectionViewCell.m; sourceTree = "<group>"; };
+		5615E75B1AE89C1100621237 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5615E75C1AE89C1100621237 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5615E76C1AE8A88B00621237 /* disneyland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disneyland.jpg; sourceTree = "<group>"; };
+		5615E76D1AE8A88B00621237 /* dodger_stadium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dodger_stadium.jpg; sourceTree = "<group>"; };
+		5615E76E1AE8A88B00621237 /* getty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = getty.jpg; sourceTree = "<group>"; };
+		5615E76F1AE8A88B00621237 /* la_live.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = la_live.jpg; sourceTree = "<group>"; };
+		5615E7701AE8A88B00621237 /* ucla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ucla.jpg; sourceTree = "<group>"; };
+		5615E7711AE8A88B00621237 /* universal_studios.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = universal_studios.jpg; sourceTree = "<group>"; };
+		5615E7721AE8A88B00621237 /* usc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = usc.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +88,13 @@
 		56070D5D1AE82B0F00AD31AF = {
 			isa = PBXGroup;
 			children = (
+				5615E76C1AE8A88B00621237 /* disneyland.jpg */,
+				5615E76D1AE8A88B00621237 /* dodger_stadium.jpg */,
+				5615E76E1AE8A88B00621237 /* getty.jpg */,
+				5615E76F1AE8A88B00621237 /* la_live.jpg */,
+				5615E7701AE8A88B00621237 /* ucla.jpg */,
+				5615E7711AE8A88B00621237 /* universal_studios.jpg */,
+				5615E7721AE8A88B00621237 /* usc.jpg */,
 				56070D8F1AE82D6F00AD31AF /* places.plist */,
 				56070D681AE82B0F00AD31AF /* Lab6 */,
 				56070D821AE82B0F00AD31AF /* Lab6Tests */,
@@ -152,6 +176,8 @@
 				56070D9B1AE8323F00AD31AF /* PlacesCollectionViewController.m */,
 				56070D9D1AE8379B00AD31AF /* PlacesCollectionViewCell.h */,
 				56070D9E1AE8379B00AD31AF /* PlacesCollectionViewCell.m */,
+				5615E75B1AE89C1100621237 /* DetailViewController.h */,
+				5615E75C1AE89C1100621237 /* DetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -236,8 +262,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5615E7781AE8A88B00621237 /* universal_studios.jpg in Resources */,
 				56070D751AE82B0F00AD31AF /* Main.storyboard in Resources */,
+				5615E7741AE8A88B00621237 /* dodger_stadium.jpg in Resources */,
+				5615E7731AE8A88B00621237 /* disneyland.jpg in Resources */,
+				5615E7761AE8A88B00621237 /* la_live.jpg in Resources */,
 				56070D7A1AE82B0F00AD31AF /* LaunchScreen.xib in Resources */,
+				5615E7771AE8A88B00621237 /* ucla.jpg in Resources */,
+				5615E7751AE8A88B00621237 /* getty.jpg in Resources */,
+				5615E7791AE8A88B00621237 /* usc.jpg in Resources */,
 				56070D901AE82D6F00AD31AF /* places.plist in Resources */,
 				56070D771AE82B0F00AD31AF /* Images.xcassets in Resources */,
 			);
@@ -262,6 +295,7 @@
 				56070D6F1AE82B0F00AD31AF /* AppDelegate.m in Sources */,
 				56070D6C1AE82B0F00AD31AF /* main.m in Sources */,
 				56070D9F1AE8379B00AD31AF /* PlacesCollectionViewCell.m in Sources */,
+				5615E75D1AE89C1100621237 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +488,7 @@
 				56070D8B1AE82B0F00AD31AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56070D8C1AE82B0F00AD31AF /* Build configuration list for PBXNativeTarget "Lab6Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +497,7 @@
 				56070D8E1AE82B0F00AD31AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

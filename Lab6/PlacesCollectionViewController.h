@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void(^CellCompletionHandler)(NSDictionary *place);
 
 @interface PlacesCollectionViewController : UICollectionViewController
-
+@property(copy, nonatomic) CellCompletionHandler completionHandler;
 @end

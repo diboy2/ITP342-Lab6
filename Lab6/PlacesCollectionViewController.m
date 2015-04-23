@@ -7,9 +7,12 @@
 //
 
 #import "PlacesCollectionViewController.h"
+#import "PlacesModel.h"
+#import "PlacesCollectionViewCell.h"
+#import "DetailViewController.h"
 
 @interface PlacesCollectionViewController ()
-
+@property(strong, nonatomic) PlacesModel *model;
 @end
 
 @implementation PlacesCollectionViewController
@@ -18,7 +21,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.model = [PlacesModel sharedModel];
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,36 +36,52 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DetailViewController *detailVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems[0];
+    NSDictionary *place = [self.model placeAtIndex:indexPath.row];
+    [detailVC setPlace:place];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
-    return 0;
+
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
+
+    return [self.model numberOfPlaces];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
+    PlacesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Place"  forIndexPath:indexPath];
+    NSDictionary *place = [self.model placeAtIndex:indexPath.row];
+   
+    [cell setViewCell:place];
     return cell;
 }
+- (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)[self.collectionView collectionViewLayout];
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight){
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    }
+    else{
+        layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    }
+    
+}
+
 
 #pragma mark <UICollectionViewDelegate>
 

@@ -22,19 +22,37 @@ NSString *const ImageKey = @"image";
 NSString *const PlacesPlist = @"places.plist";
 
 @implementation PlacesModel
+
++(instancetype) sharedModel{
+    static PlacesModel  *_sharedModel =nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedModel = [[self alloc] init];
+    });
+    return _sharedModel;
+}
+
 - (instancetype) init
 {
-    _placesFilePath = @"places.plist";
+    _placesFilePath = [[NSBundle mainBundle] pathForResource:@"places" ofType:@"plist" ];
     _places = [NSMutableArray arrayWithContentsOfFile:_placesFilePath];
     
     if(!_places){ // no file
         _places = [[NSMutableArray alloc] initWithObjects:
-                   [NSDictionary dictionaryWithObjectsAndKeys:@"The Getty",@"name",@"website", @"www.getty.edu",@"image","getty.jpg",nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"The Getty",@"name", @"www.getty.edu",@"website","getty.jpg",@"image",nil],
                    nil];
     }
     
     
     return self;
+}
+
+- (NSUInteger) numberOfPlaces{
+    return [self.places count];
+}
+
+- (NSDictionary *) placeAtIndex: (NSUInteger) index{
+    return [self.places objectAtIndex:index];
 }
 
 @end

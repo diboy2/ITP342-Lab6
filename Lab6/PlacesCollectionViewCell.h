@@ -10,4 +10,5 @@
 
 @interface PlacesCollectionViewCell : UICollectionViewCell
 
+-(void) setViewCell:(NSDictionary *)place;
 @end

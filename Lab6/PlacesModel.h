@@ -10,4 +10,7 @@
 
 @interface PlacesModel : NSObject
 
++ (instancetype) sharedModel;
+- (NSUInteger) numberOfPlaces;
+- (NSDictionary *) placeAtIndex: (NSUInteger) index;
 @end
