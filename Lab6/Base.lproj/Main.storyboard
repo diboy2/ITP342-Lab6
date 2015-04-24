@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q7F-ej-rOP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Places Collection View Controller-->
@@ -13,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="67L-9B-m8I">
-                            <size key="itemSize" width="140" height="182"/>
+                            <size key="itemSize" width="163" height="197"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -23,14 +22,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="182"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="163" height="197"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAT-Eo-yXo">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="153"/>
+                                            <rect key="frame" x="11" y="8" width="140" height="140"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yk-1Q-vT5">
-                                            <rect key="frame" x="0.0" y="151" width="140" height="40"/>
+                                            <rect key="frame" x="0.0" y="161" width="163" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -69,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOW-dW-POS">
-                                <rect key="frame" x="-33" y="64" width="633" height="630"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="5rE-J3-w8T" id="Ils-nf-USl"/>
@@ -78,10 +77,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oOW-dW-POS" firstAttribute="leading" secondItem="REo-0Q-6ZA" secondAttribute="leadingMargin" constant="-49" id="Ahn-kh-WLZ"/>
-                            <constraint firstAttribute="trailing" secondItem="oOW-dW-POS" secondAttribute="trailing" id="WJe-S4-UeC"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="oOW-dW-POS" secondAttribute="bottom" constant="-94" id="nzG-uK-KBB"/>
-                            <constraint firstItem="oOW-dW-POS" firstAttribute="top" secondItem="Hld-gr-BfC" secondAttribute="bottom" id="ok0-ej-nIm"/>
+                            <constraint firstAttribute="bottom" secondItem="oOW-dW-POS" secondAttribute="bottom" id="67e-2A-bh4"/>
+                            <constraint firstAttribute="trailing" secondItem="oOW-dW-POS" secondAttribute="trailing" id="dCx-10-iqF"/>
+                            <constraint firstItem="oOW-dW-POS" firstAttribute="leading" secondItem="REo-0Q-6ZA" secondAttribute="leading" id="eHV-3v-Ywe"/>
+                            <constraint firstItem="oOW-dW-POS" firstAttribute="top" secondItem="REo-0Q-6ZA" secondAttribute="top" id="epI-pX-zC1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OEa-Hq-GPz"/>
