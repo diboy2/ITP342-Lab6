@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController <UIWebViewDelegate>
--(void)setPlace:(NSDictionary *) place;
+@property (strong, nonatomic) NSDictionary *place;
 @end

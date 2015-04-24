@@ -78,6 +78,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="OEa-Hq-GPz"/>
+                    <connections>
+                        <outlet property="webView" destination="oOW-dW-POS" id="OJu-t8-dam"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="It6-bo-5zI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

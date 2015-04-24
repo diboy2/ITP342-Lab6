@@ -9,18 +9,23 @@
 #import "DetailViewController.h"
 #import "PlacesCollectionViewCell.h"
 @interface DetailViewController ()
-@property (strong, nonatomic) NSDictionary *place;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 @implementation DetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = self.place[@"name"];
+    NSURL *url = [NSURL URLWithString:self.place[@"website"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:request];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
 
@@ -34,12 +39,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
--(void)setPlace:(NSDictionary *) place{
-    self.place = place;
-}
-
-
 
 
 @end

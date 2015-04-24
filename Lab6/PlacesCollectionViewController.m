@@ -41,7 +41,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    DetailViewController *detailVC = segue.destinationViewController;
+    DetailViewController *detailVC = (DetailViewController *)segue.destinationViewController;
     
     NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems[0];
     NSDictionary *place = [self.model placeAtIndex:indexPath.row];
