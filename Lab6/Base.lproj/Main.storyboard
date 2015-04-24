@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q7F-ej-rOP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Places Collection View Controller-->
@@ -26,10 +27,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAT-Eo-yXo">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="153"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yk-1Q-vT5">
-                                            <rect key="frame" x="4" y="149" width="140" height="40"/>
+                                            <rect key="frame" x="0.0" y="151" width="140" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -67,8 +68,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oOW-dW-POS">
-                                <rect key="frame" x="-33" y="92" width="633" height="602"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOW-dW-POS">
+                                <rect key="frame" x="-33" y="64" width="633" height="630"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="5rE-J3-w8T" id="Ils-nf-USl"/>
@@ -76,6 +77,12 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oOW-dW-POS" firstAttribute="leading" secondItem="REo-0Q-6ZA" secondAttribute="leadingMargin" constant="-49" id="Ahn-kh-WLZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oOW-dW-POS" secondAttribute="trailing" id="WJe-S4-UeC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="oOW-dW-POS" secondAttribute="bottom" constant="-94" id="nzG-uK-KBB"/>
+                            <constraint firstItem="oOW-dW-POS" firstAttribute="top" secondItem="Hld-gr-BfC" secondAttribute="bottom" id="ok0-ej-nIm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OEa-Hq-GPz"/>
                     <connections>
